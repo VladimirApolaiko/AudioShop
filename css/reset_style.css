@@ -1,0 +1,124 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body, html {
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*reset stylesheet*/
+
+@font-face{
+    font-family:"MyriadRegular";
+    src: url("../fonts/MyriadPro-Regular.otf");
+}
+header {
+    height: 53px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+nav {
+    display:flex;
+}
+
+.f-list {
+    float:left;
+    height: 53px;
+    width: 42%;
+}
+
+.logo {
+    width: 225px;
+    display:block;
+    margin:auto;
+}
+.logo img{
+    display:block;
+    margin:auto;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li a{
+    font-family: MyriadRegular;
+    font-size: 16px;
+    color:white;
+}
+ul li a:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+ul.nav-first, ul.nav-second{
+    /*flex - establish flex container flex|inline-flex*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*flex-direction - define course of elements row|row-reverse|column|column-reverse*/
+    /*flex-wrap define number or rows in container nowrap|wrap|wrap-reverse*/
+    /*flex-flow it's a reduction for properties above*/
+    -webkit-flex-flow: row;
+    /*justify-content define alignment of elements inside flex container
+    flex-start|flex-end|center|space-between|space-around*/
+    justify-content: space-around;
+    margin-top: 4px;
+}
+ul.nav-second li{
+    flex-grow: 1;
+    text-align:center;
+}
+ul.nav-second li:nth-child(2){
+    flex-grow: 5;
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
