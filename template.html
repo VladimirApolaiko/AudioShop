@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset_style.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <!--Owl carousel-->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-grid-only/css/grid12.css">
+    <script src="owl-carousel/owl.carousel.min.js"></script>
 </head>
 <body>
 <header>
@@ -21,18 +29,115 @@
         <div class="logo">
             <img src="img/logo.png" alt="Pathefon">
         </div>
-        
+
 
         <div class="f-list">
             <ul class="nav-second">
-                <li><a href="#">Melodia</a></li>
                 <li><a href="#">Microphones</a></li>
+                <li><a href="#">Melodia</a></li>
+                <li><a href="#">Events</a></li>
             </ul>
         </div>
-
     </nav>
 </header>
+<div class="corousel-wrap">
+    <div id="carousel" class="owl-carousel owl-theme">
+        <div class="item"><img class="lazyOwl" data-src="img/headphones.png" alt="Headphones"></div>
+        <div class="item"><img class="lazyOwl" data-src="img/pathefon.png" alt="Pathefon"></div>
+    </div>
+
+    <div class="arrows-wrapper">
+        <div class="left-arrow arrow-base">
+            <i class="fa fa-angle-left"></i>
+        </div>
+
+        <div class="right-arrow arrow-base">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
+</div>
+
+<div class="search">
+    <input type="text" maxlength="49">
+</div>
+
+<div class="feeds container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-xs-12 col-sm-6 col-centered">
+            <div class="image-wrapper">
+                <img src="img/Feeds/melodia.png" alt="">
+            </div>
+            <article>
+                Melody - Soviet and Russian record company, the oldest company in Russia sound industry.
+                Founded in 1964 as the All-Union company records.Combining basic factory records and recording
+                studios that existed at that time in the Soviet Union, and became a public company for...
+            </article>
+        </div>
+        <div class="col-lg-3 col-xs-12 col-sm-6">
+            <div class="image-wrapper">
+                <img src="img/Feeds/dj_equipment.jpg" alt="">
+            </div>
+            <article></article>
+        </div>
+        <div class="col-lg-3 col-xs-12 col-sm-6">
+            <div class="image-wrapper">
+                <img src="img/Feeds/headphones.jpg" alt="">
+            </div>
+            <article></article>
+        </div>
+        <div class="col-lg-3 col-xs-12 col-sm-6">
+            <div class="image-wrapper">
+                <img src="img/Feeds/melodia.png" alt="">
+            </div>
+            <article></article>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="main-footer-content">
+
+        <ul class="footer-menue">
+            <li>
+                <img src="img/pathefon-col.png" alt="">
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertisment</a></li>
+            <li><a href="#">Get a Job</a></li>
+        </ul>
+        <ul class="partners-list">
+            <li><img src="img/sony.png" alt=""></li>
+            <li><img src="img/lectronics.png" alt=""></li>
+            <li><img src="img/bird.png" alt=""></li>
+            <li><img src="img/sennheiser.png" alt=""></li>
+        </ul>
+    </div>
+    <!--<p>55 E 52nd St, New York, NY 10022, United states of America</p>-->
+</footer>
 
 
+<script>
+    var carousel = $("#carousel");
+    var leftArrow = $(".left-arrow");
+    var rightArrow = $(".right-arrow");
+
+    $(document).ready(function () {
+        carousel.owlCarousel({
+            slideSpeed: 700,
+            singleItem: true,
+            pagination: false,
+            autoPlay: true,
+            lazyLoad: true
+        });
+    });
+
+    leftArrow.click(function () {
+        carousel.trigger("owl.prev");
+    });
+
+    rightArrow.click(function () {
+        carousel.trigger("owl.next")
+    });
+</script>
 </body>
 </html>
