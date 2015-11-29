@@ -202,6 +202,8 @@ ul.nav-second li:nth-child(2) {
 
 .image-wrapper img{
     width:100%;
+    max-width: 446px;
+    max-height: 302px;
 }
 
 article{
@@ -231,18 +233,8 @@ article:hover{
     height: 200px;
 }
 footer{
-    background-color: rgba(0, 0, 0, .7);
-}
-.main-footer-content{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    justify-content: space-between;
-    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    color:white;
 }
 .partners-list{
     display: -webkit-box;
@@ -254,7 +246,10 @@ footer{
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
     align-items:center;
+    width:50%;
+    margin:auto;
 }
+
 
 .footer-menue{
     display: -webkit-box;
@@ -262,10 +257,28 @@ footer{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow:row;
+    justify-content:center;
+    margin:auto;
+    margin-top: 30px;
+}
+.footer-menue li {
+    font-size: 18px;
+}
+.footer-menue li a {
+    font-size: 18px;
+    margin-right: 20px;
+}
+.address{
+    display: block;
+    width: 459px;
+    margin: auto
+}
 
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
-    align-items:center;
+.email{
+    display: block;
+    width: 181px;
+    margin: auto;
 }
 
 
