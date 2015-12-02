@@ -21,6 +21,7 @@ time, mark, audio, video {
 
 a, a:visited {
     text-decoration: none;
+    color:white;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -54,15 +55,12 @@ body, html {
 
 header {
     height: 53px;
+    position:absolute;
     background-color: rgba(0, 0, 0, .5);
-    position: absolute;
     width: 100%;
     z-index: 10;
 }
 
-nav {
-    display: flex;
-}
 
 .f-list {
     float: left;
@@ -96,7 +94,7 @@ ul li a:hover {
     color: gray;
 }
 
-ul.nav-first, ul.nav-second {
+ul.nav-first, ul.nav-second, nav, .partners-list, .footer-menue{
     /*flex - establish flex container flex|inline-flex*/
     display: -webkit-box;
     display: -moz-box;
@@ -105,6 +103,9 @@ ul.nav-first, ul.nav-second {
     display: flex;
     /*flex-direction - define course of elements row|row-reverse|column|column-reverse*/
     /*flex-wrap define number or rows in container nowrap|wrap|wrap-reverse*/
+
+}
+ul.nav-first, ul.nav-second{
     /*flex-flow it's a reduction for properties above*/
     -webkit-flex-flow: row;
     /*justify-content define alignment of elements inside flex container
@@ -176,12 +177,12 @@ ul.nav-second li:nth-child(2) {
     width: 400px;
     height:30px;
 }
-.search input{
+.search input, .mobile-search input{
     width: 100%;
     height:100%;
     background-color: rgba(0, 0, 0, .5);
     border:none;
-    border-radius: 1px;
+    border-radius: 2px;
     color:white;
     font-size: 1.1em;
 }
@@ -202,8 +203,10 @@ ul.nav-second li:nth-child(2) {
 
 .image-wrapper img{
     width:100%;
-    max-width: 446px;
-    max-height: 302px;
+    max-width: 400px;
+    max-height: 300px;
+    display:block;
+    margin:auto;
 }
 
 article{
@@ -211,7 +214,7 @@ article{
     display: block;
     margin: 0 auto;
     height: 70%;
-    bottom: 11px;
+    bottom: 7px;
     left: 7px;
     right: 7px;
     background-color: rgba(0, 0, 0, .8);
@@ -220,14 +223,12 @@ article{
     cursor:pointer;
     color:white;
     overflow:hidden;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 article:hover{
     opacity:1;
 }
-
-
 
 .row .footer{
     height: 200px;
@@ -237,26 +238,15 @@ footer{
     color:white;
 }
 .partners-list{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+
 
     -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items:center;
-    width:50%;
-    margin:auto;
 }
 
 
 .footer-menue{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     -webkit-flex-flow:row;
     justify-content:center;
     margin:auto;
@@ -269,16 +259,92 @@ footer{
     font-size: 18px;
     margin-right: 20px;
 }
-.address{
+.address, .email{
     display: block;
-    width: 459px;
-    margin: auto
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.email{
+   padding-bottom:30px;
+}
+.drop-down-button{
+    display:none;
+    font-size:30px;
+    color:white;
+    right: 10px;
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    width: 35px;
+    height: 35px;
+}
+.mobile-menue{
+    display:none;
 }
 
-.email{
-    display: block;
-    width: 181px;
-    margin: auto;
+@media (max-width: 1151px){
+
+    ul.nav-first{
+        display:none;
+    }
+    ul.nav-second{
+        display:none;
+    }
+    .drop-down-button{
+        display:block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mobile-menue{
+        position: absolute;
+        top: 100%;
+        width:100%;
+        right: 0;
+        background-color: rgba(0, 0, 0, .8);
+    }
+    .mobile-menue ul{
+        margin-top:15px;
+        text-align:center;
+    }
+    .mobile-search{
+        margin-top:15px;
+        width: 100%;
+        text-align:center;
+        display:none;
+    }
+    .mobile-search input{
+        width:80%;
+        height:30px;
+        color:black;
+        background-color:whitesmoke;
+    }
+}
+@media (max-width: 767px){
+    .left-arrow, .right-arrow {
+        display:none;
+    }
+    .search{
+        width:320px;
+    }
+    .corousel-wrap{
+        top: 53px;
+        margin-bottom: 53px;
+    }
+    header{
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+
+@media (max-width: 413px){
+    .search{
+        display:none;
+    }
+    .mobile-search{
+        display:block;
+    }
 }
 
 

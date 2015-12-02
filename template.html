@@ -30,9 +30,23 @@
             <img src="img/logo.png" alt="Pathefon">
         </div>
 
-
         <div class="f-list">
             <ul class="nav-second">
+                <li><a href="#">Microphones</a></li>
+                <li><a href="#">Melodia</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+        <span class="drop-down-button"><i class="fa fa-bars"></i></span>
+        <div class="mobile-menue">
+            <div class="mobile-search">
+                <input type="text" maxlength="49">
+            </div>
+            <ul>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Stereo Systems</a></li>
+                <li><a href="#">Dj Equipment</a></li>
                 <li><a href="#">Microphones</a></li>
                 <li><a href="#">Melodia</a></li>
                 <li><a href="#">Events</a></li>
@@ -65,7 +79,7 @@
     <div class="row">
         <div class="col-lg-3 col-xs-12 col-sm-6 col-centered">
             <div class="image-wrapper">
-                <img src="img/Feeds/melodia.png" alt="">
+                <img src="img/Feeds/headphones.jpg" alt="">
             </div>
             <article>
                 Melody - Soviet and Russian record company, the oldest company in Russia sound industry.
@@ -75,19 +89,19 @@
         </div>
         <div class="col-lg-3 col-xs-12 col-sm-6">
             <div class="image-wrapper">
-                <img src="img/Feeds/dj_equipment.jpg" alt="">
+                <img src="img/Feeds/headphones1.png" alt="">
             </div>
             <article></article>
         </div>
         <div class="col-lg-3 col-xs-12 col-sm-6">
             <div class="image-wrapper">
-                <img src="img/Feeds/headphones.jpg" alt="">
+                <img src="img/Feeds/djEquipment.png" alt="">
             </div>
             <article></article>
         </div>
         <div class="col-lg-3 col-xs-12 col-sm-6">
             <div class="image-wrapper">
-                <img src="img/headphones.png" alt="">
+                <img src="img/Feeds/stereosystem.png" alt="">
             </div>
             <article></article>
         </div>
@@ -108,8 +122,8 @@
         <li><a href="#">Get a Job</a></li>
     </ul>
 
-        <p class="address">Adress:   55 E 52nd St, New York, NY 10022, United states of america</p>
-        <p class="email">Email: patefon@gmail.com</p>
+        <span class="address">Adress:   55 E 52nd St, New York, NY 10022, United states of america</span>
+        <span class="email">Email: <a href="mailto:patefon@gmail.com">patefon@gmail.com</a></span>
     <!--<p>55 E 52nd St, New York, NY 10022, United states of America</p>-->
 </footer>
 
@@ -118,6 +132,8 @@
     var carousel = $("#carousel");
     var leftArrow = $(".left-arrow");
     var rightArrow = $(".right-arrow");
+    var dropDownButton = $(".drop-down-button");
+    var dropDownMenue = $(".mobile-menue");
 
     $(document).ready(function () {
         carousel.owlCarousel({
@@ -136,6 +152,13 @@
     rightArrow.click(function () {
         carousel.trigger("owl.next")
     });
+
+    dropDownButton.on("click", function(){
+        dropDownMenue.slideToggle();
+    });
+
+
+
 </script>
 </body>
 </html>
