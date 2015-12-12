@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset_style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="jquery-1.11.3.min.js"></script>
+    <!--Owl carousel-->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-grid-only/css/grid12.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="f-list">
+            <ul class="nav-first">
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Stereo Systems</a></li>
+                <li><a href="#">Dj Equipment</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <img src="img/logo.png" alt="Pathefon">
+        </div>
+
+        <div class="f-list">
+            <ul class="nav-second">
+                <li><a href="#">Microphones</a></li>
+                <li><a href="#">Melodia</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+        <span class="drop-down-button"><i class="fa fa-bars"></i></span>
+        <div class="mobile-menue">
+            <div class="mobile-search">
+                <input type="text" maxlength="49">
+            </div>
+            <ul>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Stereo Systems</a></li>
+                <li><a href="#">Dj Equipment</a></li>
+                <li><a href="#">Microphones</a></li>
+                <li><a href="#">Melodia</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12" >
+            <div class="main-product-image">
+    <img src="img/beats-pro-gray.png" alt="Headphones">
+</div>
+        </div>
+        <div class="col-lg-6 col-sm-12 detail-description-bootstrap-column">
+            <div class="detail-description">
+    <h3>Beats Pro</h3>
+    <div class="product-options">
+        <ul>
+            <li style="background-color:black;" data-image-url="img/beats-pro-black.png"></li>
+            <li style="background-color:#3c4568;" data-image-url="hello"></li>
+            <li style="background-color:#c9353c;" data-image-url="hello"></li>
+            <li style="background-color:#fcc550;" data-image-url="hello"></li>
+            <li style="background-color:#0088cb;" data-image-url="hello"></li>
+            <li style="background-color:gray;" data-image-url="img/beats-pro-gray.png"></li>
+        </ul>
+    </div>
+<article>
+
+    <h2>THE SOUND OF THE STUDIO.</h2></br>
+
+    Beats Pro headphones allow you take sound seriously. That means you¹re hearing music the way it was originally heard by the artist in the studio.</br></br>
+
+    <h2>CLEAR HIGHS AND DEEP LOWS.</h2></br>
+
+    Beats Pro are made of steel and aluminum, giving you an interior sound platform more solid than most. That’s why you’ll feel the kind of bass that resonates deep in your chest when you play your music.</br></br>
+
+    <h2>PRACTICALLY INDESTRUCTIBLE.</h2></br>
+
+    No cheap plastic, no frayed cords. Beats Pro headphones are made with an aluminum gunmetal frame, encasing overstuffed leather ear cups.</br></br>
+
+    <h2>TRUE NOISE REDUCTION.</h2></br>
+
+    Because Beats Pro headphones have heavily padded, pivoting ear cups, you get the noise cancelling effect without the need for power switches or batteries. It’s the real studio monitor experience in a headphone.</br>
+
+    </br><h2>UNBOXED</h2></br>
+    <ul>
+        <li>Beats Pro – Special Edition Fendi</li>
+        <li>Beats Pro™ over ear headphones</li>   
+        <li>4.2mm coiled cable with 3.5mm twist lock plug</li> 
+        <li>¼" audio adapter</li>
+        <li>In-line remote & mic cable (features may vary)</li>
+        <li>Carrying pouch</li>
+        <li>Custom color matched Fendi Selleria case</li>
+    </ul>
+    </br>
+    </br>
+    </br>
+    <ul>
+        <li>Weight (kg): 0.40</li>
+        <li>Height (mm): 197</li>   
+        <li>Length of Cable (m): 1.523</li> 
+        <li>Type of Jack: 3.5mm</li>
+    </ul>
+</article>
+</div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+
+    <ul class="partners-list">
+        <li><img src="img/sony.png" alt=""></li>
+        <li><img src="img/lectronics.png" alt=""></li>
+        <li><img src="img/bird.png" alt=""></li>
+        <li><img src="img/sennheiser.png" alt=""></li>
+    </ul>
+    <ul class="footer-menue">
+        <li><a href="#">About</a>|</li>
+        <li><a href="#">Advertisment</a>|</li>
+        <li><a href="#">Get a Job</a></li>
+    </ul>
+
+        <span class="address">Adress:   55 E 52nd St, New York, NY 10022, United states of ASmerica</span>
+        <span class="email">Email: <a href="mailto:patefon@gmail.com">patefon@gmail.com</a></span>
+</footer>
+<script type="text/javascript">
+    var dropDownButton = $(".drop-down-button");
+    var dropDownMenue = $(".mobile-menue");
+
+    $(".product-options li").on("click", function(event){
+        $(".main-product-image img")[0].setAttribute("src", event.currentTarget.getAttribute("data-image-url"));
+    }); 
+    dropDownButton.on("click", function(){
+        dropDownMenue.slideToggle();
+    });
+</script>
+
+</body>
+</html>
