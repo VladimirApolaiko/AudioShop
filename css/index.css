@@ -299,6 +299,15 @@ footer{
     text-align:center;
 }
 
+.search-result img{
+    width: 100%;
+}
+
+.search-row{
+    margin-top: 53px;
+    background-color: rgba(0,0,0, .8);
+}
+
 @media (max-width: 1151px){
 
     ul.nav-first{
