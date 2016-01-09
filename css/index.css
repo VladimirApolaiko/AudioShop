@@ -316,7 +316,32 @@ footer{
 
 .search-row{
     margin-top: 53px;
+}
+.search-panel{
+    width: 320px;
+    height: 100%;
+    float: left;
     background-color: rgba(0,0,0, .8);
+}
+
+.find-element-group{
+    width: 305px;
+    padding: 10px;
+    text-align: right;
+    font-family: "Roboto";
+    font-size: 14px;
+    color:white;
+}
+.find-element-group input, .find-element-group select{
+    width: 210px;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 14px;
+}
+.find-element-group input.cost{
+    width: 86px;
 }
 
 @media (max-width: 1151px){
@@ -356,20 +381,7 @@ footer{
     }
 }
 
-.find-element-group input, .find-element-group select{
-    display:block;
-    width: 300px;
-    height: 30px;
-    margin-bottom: 15px;
-    border-radius: 3px;
-    border: none;
-}
 
-.find-element-group input.cost{
-    width: 100px;
-    margin-right: 100px;
-    float:left;
-}
 
 @media (max-width: 767px){
     .left-arrow, .right-arrow {
