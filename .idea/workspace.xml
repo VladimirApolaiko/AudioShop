@@ -4,10 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/css/reset_style.css" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38e4531-b1ad-470a-87ed-a5d41b38aadc" name="Default" comment="idea files">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
+    <list default="true" id="a38e4531-b1ad-470a-87ed-a5d41b38aadc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/list.html" afterPath="$PROJECT_DIR$/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AudioShop.iws" />
@@ -30,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.076923">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.6781737">
+              <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -42,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37094972">
+            <state vertical-scroll-proportion="-11.448276">
               <caret line="319" column="17" selection-start-line="319" selection-start-column="17" selection-end-line="319" selection-end-column="17" />
               <folding />
             </state>
@@ -81,8 +79,8 @@
         <option value="$PROJECT_DIR$/template.html" />
         <option value="$PROJECT_DIR$/css/reset_style.css" />
         <option value="$PROJECT_DIR$/gitignore" />
-        <option value="$PROJECT_DIR$/list.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/list.html" />
       </list>
     </option>
   </component>
@@ -397,7 +395,7 @@
       <workItem from="1450627777967" duration="5269000" />
       <workItem from="1450895741663" duration="293000" />
       <workItem from="1452352598604" duration="36000" />
-      <workItem from="1452368445804" duration="3360000" />
+      <workItem from="1452368445804" duration="3758000" />
     </task>
     <task id="LOCAL-00001" summary="Add new footer without optimization under mobile platforms">
       <created>1448815310578</created>
@@ -429,11 +427,17 @@
       <option name="project" value="LOCAL" />
       <updated>1450895916187</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="temp result">
+      <created>1452371817350</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1452371817350</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18432000" />
+    <option name="totallyTimeSpent" value="18830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1084" extended-state="0" />
@@ -487,7 +491,8 @@
     <MESSAGE value="idea files&#10;" />
     <MESSAGE value="&#10;&#10;" />
     <MESSAGE value="idea files" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea files" />
+    <MESSAGE value="temp result" />
+    <option name="LAST_COMMIT_MESSAGE" value="temp result" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -761,21 +766,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list.html">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.076923">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-11.448276">
+          <caret line="319" column="17" selection-start-line="319" selection-start-column="17" selection-end-line="319" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
+    <entry file="file://$PROJECT_DIR$/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37094972">
-          <caret line="319" column="17" selection-start-line="319" selection-start-column="17" selection-end-line="319" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.6781737">
+          <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
