@@ -230,11 +230,7 @@ article.feed:hover{
     display: inline-block;
 }
 
-.row .footer{
-    height: 200px;
-}
-
-footer{
+.footer{
     background-color: rgba(0, 0, 0, .8);
     color:white;
 }
@@ -309,19 +305,20 @@ footer{
 .detail-description-bootstrap-column{
     text-align:center;
 }
-
+.search-result{
+    float:left;
+}
 .search-result img{
     width: 100%;
 }
 
 .search-row{
-    margin-top: 53px;
+    background-color: rgba(0,0,0, .8);
 }
 .search-panel{
     width: 320px;
     height: 100%;
-    float: left;
-    background-color: rgba(0,0,0, .8);
+    margin:auto;
 }
 
 .find-element-group{
