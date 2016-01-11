@@ -237,6 +237,7 @@ article.feed:hover{
 footer{
     background-color: rgba(0, 0, 0, .8);
     color:white;
+    clear:both;
 }
 .partners-list{
     -webkit-flex-flow: row wrap;
@@ -312,25 +313,39 @@ footer{
 
 .search-result img{
     width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
 }
+
+.search-result h4{
+    text-align: center;
+    font-family: "Borg";
+    font-size: 35px;
+}
+
 
 
 .search-panel{
-    width: 320px;
-    height: 100%;
-    float: left;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-radius: 3px;
     background-color: rgba(0,0,0, .8);
 }
+.search-panel > div{
+    margin: auto;
+    width: 320px;
+}
 
-.find-element-group{
+.find-element-group, .sign-up-form{
     width: 305px;
     padding: 10px;
     text-align: right;
     font-family: "Roboto";
-    font-size: 14px;
-    color:white;
+    font-size: 15px;
+    color: #00155d;
 }
-.find-element-group input, .find-element-group select{
+.find-element-group input, .find-element-group select, .sign-up-form input{
     width: 210px;
     height: 30px;
     margin-bottom: 15px;
@@ -338,8 +353,41 @@ footer{
     border: none;
     margin-left: 14px;
 }
-.find-element-group input.cost{
-    width: 86px;
+
+.sign-up-container button{
+    border: none;
+    height: 30px;
+    background-color: #00155d;;
+    border-radius: 3px;
+    font-family: Roboto;
+    color: white;
+    cursor:pointer;
+}
+
+.find-element-group input.range{
+    width: 96px;
+}
+.user-func{
+    color:white;
+    cursor:pointer;
+}
+.user-func-mobile{
+    font-size: 24px !important;
+    margin: 0 20px 0 20px;
+}
+
+.sign-up-form{
+    width: 320px;
+    position:absolute;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.sign-up-container img{
+    width:100%;
 }
 
 @media (max-width: 1151px){
@@ -378,9 +426,6 @@ footer{
         background-color:whitesmoke;
     }
 }
-
-
-
 @media (max-width: 767px){
     .left-arrow, .right-arrow {
         display:none;
@@ -403,5 +448,8 @@ footer{
     }
     .mobile-search{
         display:block;
+    }
+    .sign-up-form{
+        top:53px;
     }
 }

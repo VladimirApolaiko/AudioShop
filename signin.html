@@ -62,68 +62,28 @@
         </div>
     </nav>
 </header>
-<div class="corousel-wrap">
-    <div id="carousel" class="owl-carousel owl-theme">
-        <div class="item"><img class="lazyOwl" data-src="img/headphones.png" alt="Headphones"></div>
-        <div class="item"><img class="lazyOwl" data-src="img/pathefon.png" alt="Pathefon"></div>
-    </div>
-
-    <div class="arrows-wrapper">
-        <div class="left-arrow arrow-base">
-            <i class="fa fa-angle-left"></i>
-        </div>
-
-        <div class="right-arrow arrow-base">
-            <i class="fa fa-angle-right"></i>
+<div class="sign-up-container">
+    <div class="corousel-wrap">
+        <div id="carousel" class="owl-carousel owl-theme">
+            <div class="item"><img class="lazyOwl" data-src="img/user-func.jpg" alt="mirro"></div>
+            <div class="item"><img class="lazyOwl" data-src="img/user-func2.jpg" alt="mirro"></div>
+            <div class="item"><img class="lazyOwl" data-src="img/user-func3.jpg" alt="mirro"></div>
         </div>
     </div>
+
+    <!--<img src="img/user-func.jpg" alt=""/>-->
+
+    <form class="sign-up-form">
+        <label for="email">Email</label>
+        <input type="text" id="email"/>
+        <label for="password">Password</label>
+        <input type="password" id="password"/>
+        <button>Sign in</button>
+    </form>
 </div>
 
-<div class="search">
-    <input type="text" maxlength="49">
-</div>
 
-<div class="feeds container-fluid">
-    <div class="row">
-        <div class="col-lg-3 col-xs-12 col-sm-6 col-centered">
-            <div class="image-wrapper">
-                <img src="img/Feeds/headphones.jpg" alt="">
-            </div>
-            <article class="feed">
-                Melody - Soviet and Russian record company, the oldest company in Russia sound industry.
-                Founded in 1964 as the All-Union company records.Combining basic factory...
-            </article>
-        </div>
-        <div class="col-lg-3 col-xs-12 col-sm-6">
-            <div class="image-wrapper">
-                <img src="img/Feeds/headphones1.png" alt="">
-            </div>
-            <article class="feed">
-                Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
-                Bluetooth® device and move freely for up to 30 feet of wireless listening...
-            </article>
-        </div>
-        <div class="col-lg-3 col-xs-12 col-sm-6">
-            <div class="image-wrapper">
-                <img src="img/Feeds/djEquipment.png" alt="">
-            </div>
-            <article class="feed">
-                Accomplished and adaptable, Ableton software has become the go to platform for DJs and producers
-                thanks to its logical on screen arrangement. Until recently however, the software...
-            </article>
-        </div>
-        <div class="col-lg-3 col-xs-12 col-sm-6">
-            <div class="image-wrapper">
-                <img src="img/Feeds/stereosystem.png" alt="">
-            </div>
-            <article class="feed">
-                We’ve been saying it for years – flatscreens don’t sound that good; hence the recent influx of soundbars
-                (and now their sister devices, soundbases).And now manufacturers are beginning to produce...
-            </article>
-        </div>
-    </div>
 </div>
-
 <footer>
 
     <ul class="partners-list">
@@ -138,15 +98,13 @@
         <li><a href="#">Get a Job</a></li>
     </ul>
 
-        <span class="address">Adress:   55 E 52nd St, New York, NY 10022, United states of America</span>
-        <span class="email">Email: <a href="mailto:patefon@gmail.com">patefon@gmail.com</a></span>
+    <span class="address">Adress:   55 E 52nd St, New York, NY 10022, United states of America</span>
+    <span class="email">Email: <a href="mailto:patefon@gmail.com">patefon@gmail.com</a></span>
 </footer>
 
 
 <script>
     var carousel = $("#carousel");
-    var leftArrow = $(".left-arrow");
-    var rightArrow = $(".right-arrow");
     var dropDownButton = $(".drop-down-button");
     var dropDownMenue = $(".mobile-menue");
 
@@ -156,16 +114,10 @@
             singleItem: true,
             pagination: false,
             autoPlay: true,
-            lazyLoad: true
+            lazyLoad: true,
+            mouseDrag:false,
+            touchDrag:false
         });
-    });
-
-    leftArrow.click(function () {
-        carousel.trigger("owl.prev");
-    });
-
-    rightArrow.click(function () {
-        carousel.trigger("owl.next")
     });
 
     dropDownButton.on("click", function(){

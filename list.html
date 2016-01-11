@@ -17,7 +17,7 @@
     <script src="owl-carousel/owl.carousel.min.js"></script>
 </head>
 <body>
-<header style="position:relative">
+<header style="position:relative;">
     <nav>
         <div class="f-list">
             <ul class="nav-first">
@@ -37,15 +37,20 @@
                 <li><a href="#">Microphones</a></li>
                 <li><a href="#">Melodia</a></li>
                 <li><a href="#">Events</a></li>
+                <li><i class="fa fa-user-plus user-func"></i></li>
+                <li><i class="fa fa-sign-in user-func"></i></li>
             </ul>
         </div>
         <span class="drop-down-button"><i class="fa fa-bars"></i></span>
-
         <div class="mobile-menue">
             <div class="mobile-search">
                 <input type="text" maxlength="49">
             </div>
             <ul>
+                <li>
+                    <i class="fa fa-user-plus user-func user-func-mobile"></i>
+                    <i class="fa fa-sign-in user-func user-func-mobile"></i>
+                </li>
                 <li><a href="#">Headphones</a></li>
                 <li><a href="#">Speakers</a></li>
                 <li><a href="#">Stereo Systems</a></li>
@@ -58,132 +63,135 @@
     </nav>
 </header>
 <div class="search-panel">
-    <div class="find-element-group clearfix">
-        <form>
-            <label for="producer">Producer</label>
-            <select name="" id="producer">
-                <option value="">Beats</option>
-                <option value="">Samsung</option>
-                <option value="">Philips</option>
-                <option value="">Sony</option>
-            </select>
-            <label for="model">Model</label>
-            <select name="" id="model">
-                <option value="">MDR-XB-450</option>
-                <option value="">MDR-XB-450</option>
-                <option value="">MDR-XB-450</option>
-            </select>
-            <label for="type">Type</label>
-            <select name="" id="type">
-                <option value="">monitor headphones</option>
-            </select>
-            <label for="weight">Weight</label>
-            <input type="text" id="weight"/>
-            <label for="from">From</label>
-            <input type="number" id="from" class="cost"/>
-            <label for="to">To</label>
-            <input type="number" id="to" class="cost"/>
-        </form>
+    <div>
+        <div class="find-element-group clearfix">
+            <form>
+                <label for="producer">Producer</label>
+                <select name="" id="producer">
+                    <option value="">Beats</option>
+                    <option value="">Samsung</option>
+                    <option value="">Philips</option>
+                    <option value="">Sony</option>
+                </select>
+                <label for="model">Model</label>
+                <select name="" id="model">
+                    <option value="">MDR-XB-450</option>
+                    <option value="">MDR-XB-450</option>
+                    <option value="">MDR-XB-450</option>
+                </select>
+                <label for="type">Type</label>
+                <select name="" id="type">
+                    <option value="">Monitor</option>
+                </select>
+                <label for="weight">Weight</label>
+                <input type="number" id="weight" class="range"/>
+                <input type="number" class="range"/>
+
+                <label for="range">Cost</label>
+                <input type="number" id="range" class="range"/>
+                <input type="number" class="range"/>
+            </form>
+        </div>
+        <div class="product-options" style="margin-left: 15px;">
+            <ul>
+                <li style="background-color:black;" data-image-url="img/beats-pro-black.png"></li>
+                <li style="background-color:#3c4568;" data-image-url="hello"></li>
+                <li style="background-color:#c9353c;" data-image-url="hello"></li>
+                <li style="background-color:#fcc550;" data-image-url="hello"></li>
+                <li style="background-color:#0088cb;" data-image-url="hello"></li>
+                <li style="background-color:gray;" data-image-url="img/beats-pro-gray.png"></li>
+            </ul>
+        </div>
     </div>
+
 </div>
-<div class="container">
+
+<div class="container-fluid">
     <div class="row search-row">
-        <div class="col-lg-9">
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div><div class="col-lg-3 col-sm-4">
+
+        <div class="col-lg-4 col-sm-6">
             <div class="search-result">
-                <img src="img/Feeds/headphones1.png" alt=""/>
+                <h4>Beats Pro</h4>
+                <div class="image-wrapper">
+                    <img src="img/Feeds/headphones1.png" alt=""/>
+                </div>
+                <article class="feed">
+                    Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
+                    Bluetooth® device and move freely for up to 30 feet of wireless listening...
+                </article>
             </div>
         </div>
-            <div class="col-lg-3 col-sm-4">
-                <div class="search-result">
-                    <img src="img/Feeds/headphones1.png" alt=""/>
-                </div>
-            </div><div class="col-lg-3 col-sm-4">
+        <div class="col-lg-4 col-sm-6">
             <div class="search-result">
-                <img src="img/Feeds/headphones1.png" alt=""/>
+                <h4>Beats Pro</h4>
+                <div class="image-wrapper">
+                    <img src="img/Feeds/headphones.jpg" alt=""/>
+                </div>
+                <article class="feed">
+                    Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
+                    Bluetooth® device and move freely for up to 30 feet of wireless listening...
+                </article>
             </div>
         </div>
-
-
+        <div class="col-lg-4 col-sm-6">
+            <div class="search-result">
+                <h4>Beats Pro</h4>
+                <div class="image-wrapper">
+                    <img src="img/Feeds/headphones3.jpg" alt=""/>
+                </div>
+                <article class="feed">
+                    Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
+                    Bluetooth® device and move freely for up to 30 feet of wireless listening...
+                </article>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="search-result">
+                <h4>Beats Pro</h4>
+                <div class="image-wrapper">
+                    <img src="img/Feeds/headphones4.png" alt=""/>
+                </div>
+                <article class="feed">
+                    Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
+                    Bluetooth® device and move freely for up to 30 feet of wireless listening...
+                </article>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="search-result">
+                <h4>Beats Pro</h4>
+                <div class="image-wrapper">
+                    <img src="img/Feeds/headphones5.png" alt=""/>
+                </div>
+                <article class="feed">
+                    Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
+                    Bluetooth® device and move freely for up to 30 feet of wireless listening...
+                </article>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="search-result">
+                <h4>Beats Pro</h4>
+                <div class="image-wrapper">
+                    <img src="img/Feeds/headphones6.png" alt=""/>
+                </div>
+                <article class="feed">
+                    Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
+                    Bluetooth® device and move freely for up to 30 feet of wireless listening...
+                </article>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+            <div class="search-result">
+                <h4>Beats Pro</h4>
+                <div class="image-wrapper">
+                    <img src="img/Feeds/headphones7.jpg" alt=""/>
+                </div>
+                <article class="feed">
+                    Break through the limitations of wired listening. Unplug your Solo2 Wireless, pair with your
+                    Bluetooth® device and move freely for up to 30 feet of wireless listening...
+                </article>
+            </div>
         </div>
     </div>
 </div>
