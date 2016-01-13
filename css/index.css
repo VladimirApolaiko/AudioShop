@@ -239,6 +239,10 @@ footer{
     color:white;
     clear:both;
 }
+footer:nth-child(4){
+    max-width: 300px;
+}
+
 .partners-list{
     -webkit-flex-flow: row wrap;
     justify-content: center;
@@ -338,12 +342,15 @@ footer{
 }
 
 .find-element-group, .sign-up-form{
-    width: 305px;
     padding: 10px;
     text-align: right;
     font-family: "Roboto";
     font-size: 15px;
     color: #00155d;
+}
+
+.find-element-group{
+    color:white;
 }
 .find-element-group input, .find-element-group select, .sign-up-form input{
     width: 210px;
