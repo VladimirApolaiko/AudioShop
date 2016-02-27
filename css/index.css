@@ -390,6 +390,11 @@ footer{
     margin: auto;
 }
 
+.add-product{
+    position: absolute;
+    top: 70px;
+}
+
 .sign-up-container img{
     width:100%;
 }

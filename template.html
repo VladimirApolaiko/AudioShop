@@ -140,10 +140,15 @@
 
         <span class="address">Adress:   55 E 52nd St, New York, NY 10022, United states of America</span>
         <span class="email">Email: <a href="mailto:patefon@gmail.com">patefon@gmail.com</a></span>
+        <span id="counter"></span>
+        <span id="date"></span>
 </footer>
 
 
 <script>
+    localStorage.setItem("visits", Number(localStorage.getItem("visits") ? localStorage.getItem("visits") : 0) + 1);
+    document.getElementById("counter").innerText = localStorage.getItem("visits");
+    document.getElementById("date").innerText = new Date().toString();
     var carousel = $("#carousel");
     var leftArrow = $(".left-arrow");
     var rightArrow = $(".right-arrow");
@@ -171,9 +176,6 @@
     dropDownButton.on("click", function(){
         dropDownMenue.slideToggle();
     });
-
-
-
 </script>
 </body>
 </html>

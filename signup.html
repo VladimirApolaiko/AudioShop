@@ -80,7 +80,7 @@
             <input type="password" id="password"/>
             <label for="confirm">Confirm</label>
             <input type="password" id="confirm"/>
-            <button>Sign up</button>
+            <button id="sign-up-button">Sign up</button>
         </form>
     </div>
 
@@ -126,7 +126,18 @@
         dropDownMenue.slideToggle();
     });
 
+    $("#sign-up-button").on("click", function(event){
+        event.preventDefault();
+        var length = document.getElementById("password").value.length;
 
+        if(!/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.exec(document.getElementById("email").value)) alert("Email should be valid");
+        if(length < 6 || length > 15){
+            alert("Not valid password, password should be more than 6 and less than 15");
+
+            if(document.getElementById("password").value !== document.getElementById("confirm").value)
+                alert("Password and Confirm password should be unique")
+        }
+    });
 
 </script>
 </body>
